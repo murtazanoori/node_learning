@@ -5,6 +5,7 @@ const db = require("./db");
 const bodyparser = require("body-parser");
 const mymodel = require("./models/myschema");
 const mymenu = require("./models/menuSchema");
+require("dotenv").config();
 const server = 3000;
 
 app.use(bodyparser.json()); //in which format do we want our request to come

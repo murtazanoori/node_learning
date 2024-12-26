@@ -1,8 +1,11 @@
 // we require mongoose here because it works like a bridge between our db and main file and this file to connect to eachother
 const mongoose = require ("mongoose");
+require("dotenv").config();
+const MONGOURL = process.env.MONGO_URL;
 
 // mongo db has its own url/server where it runs the database on.
-const URL = "mongodb://localhost:27017/mywork";
+// const URL = "mongodb://localhost:27017/mywork";
+const URL = "mongodb+srv://murtaza:1234@cluster0.ia1d8.mongodb.net/";
 
 // after that we start our mongo server on terminal with 
 // the help of brew so : brew services start mongodb-community@6.0
